@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7E2C033-3D36-4BB4-B315-46A16C2C9C67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>EmirAutomation</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>EmirAutomation</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TestFiles\Positions\TREMIR\PRD_R001_TREMIR_Del_DTCC.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestFiles\Positions\TREMIR\PRD_R001_TREMIR_Del_Regis.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestFiles\Positions\TREMIR\PRD_R001_TREMIR_NonDel_DTCC.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestFiles\Positions\TREMIR\PRD_R001_TREMIR_NonDel_Regis.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestFiles\Trades\TREMIR\PRD_R010_TREMIR_Compression.CSV">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestFiles\Trades\TREMIR\PRD_R010_TREMIR_Delegated_DTCC.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestFiles\Trades\TREMIR\PRD_R010_TREMIR_Delegated_REGIS.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestFiles\Trades\TREMIR\PRD_R010_TREMIR_NonDelegated_DTCC.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestFiles\Trades\TREMIR\PRD_R010_TREMIR_NonDelegated_REGIS.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestFiles\Products\CSVImporter\ProductUploadCSVTemplates.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestFiles\Valuation\TREMIR\SIM_R002_TREMIR.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestFiles\Valuation\TREMIR\SIM_R002_TREMIR_NonDelegated_DTCC.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="TestFiles\Collateral\TREMIR\SIM_R003_TREMIR_KNICX_1_28_009_NonDelegated.CSV">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Suites\SanityCheck.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TC19959.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TC19955.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TC19961.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TC19998.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TC19999.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TC20009.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TC20014.cs" />
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendTradesByTradeRepoAccount_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendTradesByTradeRepoAccount_REGIS.cs" />
+    <Compile Include="Tests\BusinessDataTab\TAddress_SearchAddressTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TBic_SearchBICCodeTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TCounterParties_CheckDelegatedFlags.cs" />
+    <Compile Include="Tests\BusinessDataTab\TCounterParties_CheckIntragroupsNotPresent.cs" />
+    <Compile Include="Tests\BusinessDataTab\TCounterParties_SearchByBIC.cs" />
+    <Compile Include="Tests\BusinessDataTab\TCounterParties_SearchTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TCounterParty_Decline4eyes.cs" />
+    <Compile Include="Tests\BusinessDataTab\TCounterParty_ViewMarkets.cs" />
+    <Compile Include="Tests\BusinessDataTab\TEic_CreateEicCode.cs" />
+    <Compile Include="Tests\BusinessDataTab\TEic_EditEicCode.cs" />
+    <Compile Include="Tests\BusinessDataTab\TEic_SearchEICCode.cs" />
+    <Compile Include="Tests\BusinessDataTab\TEic_ViewEic.cs" />
+    <Compile Include="Tests\BusinessDataTab\TExtRefIn_LinkRef.cs" />
+    <Compile Include="Tests\BusinessDataTab\TExtRefIn_PromoteRefIn.cs" />
+    <Compile Include="Tests\BusinessDataTab\TExtRefIn_SearchTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TExtRefOuts_SearchTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TLegalEnt_Edit.cs" />
+    <Compile Include="Tests\BusinessDataTab\TLegalEnt_CreateLegalEnt.cs" />
+    <Compile Include="Tests\BusinessDataTab\TAddress_EditAddress.cs" />
+    <Compile Include="Tests\BusinessDataTab\TAddress_CreateAddress.cs" />
+    <Compile Include="Tests\BusinessDataTab\TAddress_ViewAddress.cs" />
+    <Compile Include="Tests\BusinessDataTab\TBic_CreateBicCode.cs" />
+    <Compile Include="Tests\BusinessDataTab\TBic_EditBicCode.cs" />
+    <Compile Include="Tests\BusinessDataTab\TBic_ViewBic.cs" />
+    <Compile Include="Tests\BusinessDataTab\TExtRefIn_ViewRefIn.cs" />
+    <Compile Include="Tests\BusinessDataTab\TExtRefOut_ViewDetails.cs" />
+    <Compile Include="Tests\BusinessDataTab\TLegalEnt_SearchTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TLegalEnt_ViewDetails.cs" />
+    <Compile Include="Tests\BusinessDataTab\TMarkets_CreateMarket.cs" />
+    <Compile Include="Tests\BusinessDataTab\TMarkets_EditMarket.cs" />
+    <Compile Include="Tests\BusinessDataTab\TMarkets_SearchTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TMarkets_ViewAudit.cs" />
+    <Compile Include="Tests\BusinessDataTab\TMarkets_ViewCounterparty.cs" />
+    <Compile Include="Tests\BusinessDataTab\TMarkets_ViewMarketDetails.cs" />
+    <Compile Include="Tests\BusinessDataTab\TProducts_Decline4eyes.cs" />
+    <Compile Include="Tests\BusinessDataTab\TProducts_SearchTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TProducts_ViewDetails.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_GenXML_Delegated_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_TREMIR_R003_NonDel_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_TREMIR_R003_NonDel_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportVal_GenXML_Delegated_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportVal_GenXML_Delegated_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportVal_TREMIR_R002_NonDel_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportVal_TREMIR_R002_NonDel_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportProducts\TImportProduct_ImportGenericXML.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_GenXML_withStaticError_andFix.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportPosition_TREMIR_R001_DelegatedAndNonDelegated_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TREMIR_R010_Delegated_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TREMIR_R010_NonDelelgated_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\SendColAndVal\TSendColateralToDTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\SendColAndVal\TSendCollateralToREGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\SendColAndVal\TSendValuation_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\SendColAndVal\TSendValuation_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendCompressionTrade.cs" />
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendPositionsToDTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendPositionToREGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendTradesToDTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendTradeToREGIS.cs" />
+    <Compile Include="Tests\BusinessDataTab\TCounterParty_CreateCounterparty.cs" />
+    <Compile Include="Tests\Channels\TMessageTypes_Search.cs" />
+    <Compile Include="Tests\Channels\TChannelFileMasks_Create.cs" />
+    <Compile Include="Tests\Channels\TChannelFileMasks_Detail.cs" />
+    <Compile Include="Tests\Channels\TChannelFileMasks_Edit.cs" />
+    <Compile Include="Tests\Channels\TChannelFileMasks_Search.cs" />
+    <Compile Include="Tests\Channels\TFTPChannelSettings_Create.cs" />
+    <Compile Include="Tests\Channels\TFTPChannelSettings_Detail.cs" />
+    <Compile Include="Tests\Channels\TFTPChannelSettings_Edit.cs" />
+    <Compile Include="Tests\Channels\TFTPChannelSettings_Search.cs" />
+    <Compile Include="Tests\Channels\TMessageTypes_Create.cs" />
+    <Compile Include="Tests\Channels\TMessageTypes_Detail.cs" />
+    <Compile Include="Tests\Channels\TMessageTypes_Edit.cs" />
+    <Compile Include="Tests\Channels\TRegulations_Create.cs" />
+    <Compile Include="Tests\Channels\TRegulations_Detail.cs" />
+    <Compile Include="Tests\Channels\TRegulations_Edit.cs" />
+    <Compile Include="Tests\Channels\TRegulations_Search.cs" />
+    <Compile Include="Tests\Channels\TResponseSettings_Create.cs" />
+    <Compile Include="Tests\Channels\TResponseSettings_Detail.cs" />
+    <Compile Include="Tests\Channels\TResponseSettings_Edit.cs" />
+    <Compile Include="Tests\Channels\TResponseSettings_Search.cs" />
+    <Compile Include="Tests\Channels\TSourceSettings_Create.cs" />
+    <Compile Include="Tests\Channels\TSourceSettings_Detail.cs" />
+    <Compile Include="Tests\Channels\TSourceSettings_Edit.cs" />
+    <Compile Include="Tests\Channels\TSourceSettings_Search.cs" />
+    <Compile Include="Tests\Channels\TTargetSettings_Create.cs" />
+    <Compile Include="Tests\Channels\TTargetSettings_Detail.cs" />
+    <Compile Include="Tests\Channels\TTargetSettings_Edit.cs" />
+    <Compile Include="Tests\Channels\TTargetSettings_Search.cs" />
+    <Compile Include="Tests\Channels\TTradeRepositories_Create.cs" />
+    <Compile Include="Tests\Channels\TTradeRepositories_Detail.cs" />
+    <Compile Include="Tests\Channels\TTradeRepositories_Edit.cs" />
+    <Compile Include="Tests\Channels\TTradeRepositories_Search.cs" />
+    <Compile Include="Tests\Channels\TTradeRepositoryAccounts_Create.cs" />
+    <Compile Include="Tests\Channels\TTradeRepositoryAccounts_Detail.cs" />
+    <Compile Include="Tests\Channels\TTradeRepositoryAccounts_Edit.cs" />
+    <Compile Include="Tests\Channels\TTradeRepositoryAccounts_Search.cs" />
+    <Compile Include="Tests\Channels\TTransactionType_Create.cs" />
+    <Compile Include="Tests\Channels\TTransactionType_Detail.cs" />
+    <Compile Include="Tests\Channels\TTransactionType_Edit.cs" />
+    <Compile Include="Tests\Channels\TTransactionType_Search.cs" />
+    <Compile Include="Tests\Dashboard\TDashboard_CheckApplicationHistory.cs" />
+    <Compile Include="Tests\Dashboard\TDashboard_ClickAddConfiguredQueuePerTab.cs" />
+    <Compile Include="Tests\Dashboard\TDashboard_ClickHomeRegulationButton.cs" />
+    <Compile Include="Tests\Dashboard\TDashboard_CollapsingAndExpanding.cs" />
+    <Compile Include="Tests\Dashboard\TDashboard_CountsTests.cs" />
+    <Compile Include="Tests\Dashboard\TDashboard_SearchTests.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TInitiatorAggressor_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TInitiatorAggressor_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TInitiatorAggressor_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TInitiatorAggressor_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TProductTaxonomy_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TIntragroups_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TActionTypes_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TActionTypes_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TActionTypes_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TActionTypes_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCleared_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCleared_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCleared_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCleared_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TClearingObligation_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TClearingObligation_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TClearingObligation_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TClearingObligation_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TClearingThreshold_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TClearingThreshold_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TClearingThreshold_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TClearingThreshold_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCollateralisation_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCollateralisation_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCollateralisation_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCollateralisation_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCollateralPortfolio_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCollateralPortfolio_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCollateralPortfolio_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCollateralPortfolio_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommercialActivities_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommercialActivities_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommercialActivities_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommercialActivities_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommodityBase_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommodityBase_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommodityBase_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommodityBase_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommodityDetail_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommodityDetail_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommodityDetail_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommodityDetail_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCompressions_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCompressions_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCompressions_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCompressions_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TConfirmationMean_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TConfirmationMean_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TConfirmationMean_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TConfirmationMean_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCorporateSector_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCorporateSector_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCorporateSector_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCorporateSector_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCounterpartySide_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCounterpartySide_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCounterpartySide_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCounterpartySide_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCountries_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCountries_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCountries_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCountries_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCurrencies_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCurrencies_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCurrencies_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCurrencies_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TDeliveryTypes_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TDeliveryTypes_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TDeliveryTypes_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TDeliveryTypes_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TDerivativeClasses_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TDerivativeClasses_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TDerivativeClasses_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TDerivativeClasses_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TETDIndicators_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TETDIndicators_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TETDIndicators_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TETDIndicators_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TExerciseStyles_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TExerciseStyles_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TExerciseStyles_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TExerciseStyles_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TFinancialNatures_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TFinancialNatures_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TFinancialNatures_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TFinancialNatures_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TFrequency_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TFrequency_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TFrequency_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TFrequency_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TIntragroups_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TIntragroups_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TIntragroups_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TISINCodes_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TISINCodes_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TISINCodes_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TISINCodes_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TLifecycleEvents_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TLifecycleEvents_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TLifecycleEvents_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TLifecycleEvents_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TLoadType_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TLoadType_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TLoadType_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TLoadType_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TMasterAgreements_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TMasterAgreements_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TMasterAgreements_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TMasterAgreements_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TNonEEAs_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TNonEEAs_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TNonEEAs_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TNonEEAs_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TOptionType_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TOptionType_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TOptionType_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TOptionType_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TProductTaxonomy_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TProductTaxonomy_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TProductTaxonomy_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TRateDayCount_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TRateDayCount_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TRateDayCount_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TRateDayCount_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TTradingCapacities_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TTradingCapacities_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TTradingCapacities_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TTradingCapacities_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TUnderlyingType_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TUnderlyingType_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TUnderlyingType_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TUnderlyingType_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TValuationSources_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TValuationSources_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TValuationSources_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TValuationSources_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TValuationTypes_Create.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TValuationTypes_Detail.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TValuationTypes_Edit.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TValuationTypes_Search.cs" />
+    <Compile Include="Tests\System\TActionTypes_Detail.cs" />
+    <Compile Include="Tests\System\TActionTypes_Edit.cs" />
+    <Compile Include="Tests\System\TActionTypes_Search.cs" />
+    <Compile Include="Tests\System\TEntityLocks_RemoveLocks.cs" />
+    <Compile Include="Tests\System\TEntityLocks_SearchEntityType.cs" />
+    <Compile Include="Tests\System\TEntityLocks_SearchLockedBy.cs" />
+    <Compile Include="Tests\System\TEntityLocks_SearchUniqueReference.cs" />
+    <Compile Include="Tests\System\TOperations_Create.cs" />
+    <Compile Include="Tests\System\TOperations_Detail.cs" />
+    <Compile Include="Tests\System\TOperations_Edit.cs" />
+    <Compile Include="Tests\System\TOperations_EditRoles.cs" />
+    <Compile Include="Tests\System\TOperations_ViewRoles.cs" />
+    <Compile Include="Tests\System\TRegenerateWorkQueues_Regenerate.cs" />
+    <Compile Include="Tests\System\TSourceSystems_Detail.cs" />
+    <Compile Include="Tests\System\TSourceSystems_Edit.cs" />
+    <Compile Include="Tests\System\TSourceSystems_Search.cs" />
+    <Compile Include="Tests\System\TTenants_Create.cs" />
+    <Compile Include="Tests\System\TTenants_Detail.cs" />
+    <Compile Include="Tests\System\TTenants_Edit.cs" />
+    <Compile Include="Tests\System\TTenants_EditUsers.cs" />
+    <Compile Include="Tests\System\TTenants_ViewDelegatedOptions.cs" />
+    <Compile Include="Tests\System\TTenants_ViewUsers.cs" />
+    <Compile Include="Tests\System\TWorkQueueCategories_Create.cs" />
+    <Compile Include="Tests\System\TWorkQueueCategories_Detail.cs" />
+    <Compile Include="Tests\System\TWorkQueueCategories_Edit.cs" />
+    <Compile Include="Tests\System\TWorkQueueCategories_Search.cs" />
+    <Compile Include="Tests\TEditCollateral.cs" />
+    <Compile Include="Tests\TEditNotAllowedDuringError.cs" />
+    <Compile Include="Tests\WorkQ\TCreateWorkQ.cs" />
+    <Compile Include="Tests\BusinessDataTab\TExtRefIn_CreateNewExternalInRef.cs" />
+    <Compile Include="Tests\TEditTrade.cs" />
+    <Compile Include="Tests\BusinessDataTab\TExtRefIn_EditExtRefIn.cs" />
+    <Compile Include="Tests\BusinessDataTab\TExtRefOut_CreateNewRefOut.cs" />
+    <Compile Include="Tests\BusinessDataTab\TExtRefOut_EditRefOut.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_GenericXML_ByPortfolioCode.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_GenericXML_ByUTI.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_TREMIR.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_GenXML_Delegated_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportPosition_TREMIR_R001_DelegatedAndNonDelegated_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TREMIR_R010_Delegated_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TREMIR_R010_NonDelegated_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TREMIR.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_GenricXML.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportVal_GenericXML.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportVal_TREMIR_R002.cs" />
+    <Compile Include="Tests\BusinessDataTab\TCounterParty_EditCounterParty.cs" />
+    <Compile Include="Tests\BusinessDataTab\TProducts_CreateProduct.cs" />
+    <Compile Include="Tests\BusinessDataTab\TProducts_EditProduct.cs" />
+    <Compile Include="Tests\TEditNotAllowedDuringSendSuccessfull.cs" />
+    <Compile Include="Tests\WorkQ\TWorkQListNavigationButtonsTests.cs" />
+    <Compile Include="Tests\WorkQ\TWorkQ_CollateralQueuesAreRendering.cs" />
+    <Compile Include="Tests\WorkQ\TWorkQ_TradeQueuesAreRendering.cs" />
+    <Compile Include="Tests\WorkQ\TWorkQSearchByEmirReference.cs" />
+    <Compile Include="Tests\WorkQ\TWorkQSearchByUTI.cs" />
+    <Compile Include="Tests\WorkQ\TWorkQSortColumnsAsc.cs" />
+    <Compile Include="Tests\WorkQ\TWorkQSortColumnsDesc.cs" />
+    <Compile Include="Tests\WorkQ\TWorkQ_ValuationsQueuesAreRendering.cs" />
+    <Compile Include="Utils\CreateImportFile.cs" />
+    <Compile Include="Utils\EmirUtils.cs" />
+    <Compile Include="Utils\ImportCollateral.cs" />
+    <Compile Include="Utils\ImportPosition.cs" />
+    <Compile Include="Utils\ImportTrade.cs" />
+    <Compile Include="Utils\ImportValuation.cs" />
+    <Compile Include="Utils\Send.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestFiles\Valuation\GenXML\Boris_DTCC_ETD_Valuation.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\Collateral\GenXML\EMIRCollateral_PortfolioCode.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\Collateral\GenXML\EMIRCollateral_Test_Delegated_Collateral.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\Collateral\GenXML\EMIRCollateral_UTI.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\Products\GenXML\GenericXMLimportProduct.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\Trades\GenXML\GenericXML_Client_Direct_Boris_1_Coll.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\Trades\GenXML\GenericXML_ETD_DTCC_Trade_delegated.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFiles\Valuation\GenXML\Regis_ETD_DelegatedValuation.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutomationUtilities\AutomationUtilities.csproj">
+      <Project>{aafc64c1-2855-4171-bb46-10afdebc17f6}</Project>
+      <Name>AutomationUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TestFiles\Positions\GenXML\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <Import Project="..\packages\OctoPack.3.0.31\tools\OctoPack.targets" Condition="Exists('..\packages\OctoPack.3.0.31\tools\OctoPack.targets')" />
+  <Target Name="EnsureOctoPackImported" BeforeTargets="BeforeBuild" Condition="'$(OctoPackImported)' == ''">
+    <Error Condition="!Exists('..\packages\OctoPack.3.0.31\tools\OctoPack.targets') And ('$(RunOctoPack)' != '' And $(RunOctoPack))" Text="You are trying to build with OctoPack, but the NuGet targets file that OctoPack depends on is not available on this computer. This is probably because the OctoPack package has not been committed to source control, or NuGet Package Restore is not enabled. Please enable NuGet Package Restore to download them. For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\OctoPack.3.0.31\tools\OctoPack.targets') And ('$(RunOctoPack)' != '' And $(RunOctoPack))" Text="OctoPack cannot be run because NuGet packages were restored prior to the build running, and the targets file was unavailable when the build started. Please build the project again to include these packages in the build. You may also need to make sure that your build server does not delete packages prior to each build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+</Project>

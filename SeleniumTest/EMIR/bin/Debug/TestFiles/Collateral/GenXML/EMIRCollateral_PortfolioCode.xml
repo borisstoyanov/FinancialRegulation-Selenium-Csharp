@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EMIRCollateral xmlns="http://www.impendiumsystems.com/2012/emircollateral">
+<CollateralEntry>
+  <CollateralData>
+    <CollateralPortfolioCodeValue>132211</CollateralPortfolioCodeValue>
+    <CollateralDate>2014-07-11</CollateralDate>
+    <CollateralValue>480.8</CollateralValue>
+    <CollateralCurrency>CollateralCurrency1</CollateralCurrency>
+    <CollateralPortfolioCode>Yes</CollateralPortfolioCode>
+    <CollateralCounterparty></CollateralCounterparty>
+  </CollateralData>
+ </CollateralEntry>
+</EMIRCollateral>

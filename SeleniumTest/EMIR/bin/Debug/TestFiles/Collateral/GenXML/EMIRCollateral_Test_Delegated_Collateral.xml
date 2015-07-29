@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EMIRCollateral xmlns="http://www.impendiumsystems.com/2012/emircollateral">
+<CollateralEntry>
+  <DelegatedCollateralData>
+	 <SourceTradeID>retest_9319_STI_fifthtime</SourceTradeID>
+	 <UniqueTradeID>retest_9319_UTI_fifthtime</UniqueTradeID>
+   <CollateralDate>2014-07-18</CollateralDate>
+   <CollateralValue>190.78967</CollateralValue>
+   <CollateralCurrency>EUR</CollateralCurrency>
+   <CollateralPortfolioCode>No</CollateralPortfolioCode>
+   <CollateralCounterparty></CollateralCounterparty>
+  </DelegatedCollateralData>
+</CollateralEntry>
+</EMIRCollateral>

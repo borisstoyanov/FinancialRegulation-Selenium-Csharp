@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EMIRReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.impendiumsystems.com/2012/emirreporting C:/Projects/ImpendiumTFS/Elements/EMIR/Client/EMIRGE~1/ITERAT~3/EMIRReporting.xsd" xmlns="http://www.impendiumsystems.com/2012/emirreporting">
+	<EMIREntry>
+		<CommonData>
+			<SourceTradeID>BSTI145607</SourceTradeID>
+			<ActionType>N</ActionType>
+			<TransactionType>P</TransactionType>
+			<ETDIndicator>E</ETDIndicator>
+			<TransactionReferenceNumber>B145607</TransactionReferenceNumber>
+			<UniqueTradeID>BUTI145607</UniqueTradeID>
+		</CommonData>
+		<Counterparty>
+			<Counterparty1ID>Impendium</Counterparty1ID>
+			<Counterparty2ID>000TestCounterpartyClient1</Counterparty2ID>
+			<BrokerID>000TestCounterpartyClient1</BrokerID>
+			<ReportingEntityID>B145607</ReportingEntityID>
+			<BeneficiaryID>E2A</BeneficiaryID>
+			<TradingCapacity>P</TradingCapacity>
+			<CounterpartySide>B</CounterpartySide>
+		</Counterparty>
+		<DelegatedCounterparty>
+			<Counterparty1ID>000TestCounterpartyClient1</Counterparty1ID>
+			<Counterparty2ID>000TestBorisCounter</Counterparty2ID>
+			<CounterpartySide>S</CounterpartySide>
+		</DelegatedCounterparty>
+			<ContractType>
+				<ProductID>FX Forward EUR/JPY</ProductID>
+			</ContractType>
+			<TransactionDetails>
+				<Venue>XXXX</Venue>
+        <PriceRateSpread>10</PriceRateSpread>
+				<Notional>3401276.19</Notional>
+				<NotionalCurrency1>EUR</NotionalCurrency1>
+				<NotionalCurrency2>JPY</NotionalCurrency2>
+				<DeliverableCurrency1>JPY</DeliverableCurrency1>
+				<PriceMult>12</PriceMult>
+				<Quantity>1</Quantity>
+				<DeliveryType>P</DeliveryType>
+		<ExecutionTS>2014-07-09T14:00:00</ExecutionTS>
+		<EffectiveDate>2014-07-09</EffectiveDate>
+		<MaturityDate>2015-06-19</MaturityDate>
+		<SettlementDate>2015-06-19</SettlementDate>
+			<MasterAgreementType>MASTER AGREEMENT ISDA </MasterAgreementType>
+			<Compression>N</Compression>
+		</TransactionDetails>
+		<RiskMitigation>
+			<ConfirmationMeans>E</ConfirmationMeans>
+			<ConfirmationTS>2014-07-07T14:00:00</ConfirmationTS>
+		</RiskMitigation>
+		<Clearing>
+			<ClearingObligation>N</ClearingObligation>
+			<Cleared>N</Cleared>
+		</Clearing>
+		<Commodities />
+		<Currencies>
+			<ForwardExchangeRate>141.1235</ForwardExchangeRate>
+		</Currencies>
+		<Options>
+			<OptionExerciseStyle>E</OptionExerciseStyle>
+			<StrikePrice>15</StrikePrice>
+		</Options>
+		<InterestRates />
+		<Collateral> 
+			<PortfolioCode>No</PortfolioCode>
+			<PortfolioCodeValue>144407</PortfolioCodeValue>
+		</Collateral>
+	</EMIREntry>
+</EMIRReport>

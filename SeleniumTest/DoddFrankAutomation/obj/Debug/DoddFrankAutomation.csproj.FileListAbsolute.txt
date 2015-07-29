@@ -1,0 +1,6 @@
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\DoddFrankAutomation\bin\Debug\DoddFrankAutomation.dll.config
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\DoddFrankAutomation\bin\Debug\DoddFrankAutomation.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\DoddFrankAutomation\bin\Debug\DoddFrankAutomation.pdb
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\DoddFrankAutomation\obj\Debug\DoddFrankAutomation.csprojResolveAssemblyReference.cache
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\DoddFrankAutomation\obj\Debug\DoddFrankAutomation.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\DoddFrankAutomation\obj\Debug\DoddFrankAutomation.pdb

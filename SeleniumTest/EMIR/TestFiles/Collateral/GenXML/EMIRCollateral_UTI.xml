@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EMIRCollateral xmlns="http://www.impendiumsystems.com/2012/emircollateral">
+<CollateralEntry>
+  <CollateralData>
+	 <SourceTradeID>234234</SourceTradeID>
+	 <UniqueTradeID>234234</UniqueTradeID>
+   <CollateralDate>2014-07-18</CollateralDate>
+   <CollateralValue>190.78967</CollateralValue>
+   <CollateralCurrency>EUR</CollateralCurrency>
+   <CollateralCounterparty></CollateralCounterparty>
+  </CollateralData>
+</CollateralEntry>
+</EMIRCollateral>

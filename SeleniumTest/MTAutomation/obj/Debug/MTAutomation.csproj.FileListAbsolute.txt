@@ -1,0 +1,12 @@
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\MTAutomation\bin\Debug\MTAutomation.dll.config
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\MTAutomation\bin\Debug\MTAutomation.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\MTAutomation\bin\Debug\MTAutomation.pdb
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\MTAutomation\bin\Debug\AutomationUtilities.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\MTAutomation\bin\Debug\WebDriver.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\MTAutomation\bin\Debug\WebDriver.Support.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\MTAutomation\bin\Debug\AutomationUtilities.pdb
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\MTAutomation\bin\Debug\WebDriver.xml
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\MTAutomation\bin\Debug\WebDriver.Support.xml
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\MTAutomation\obj\Debug\MTAutomation.csprojResolveAssemblyReference.cache
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\MTAutomation\obj\Debug\MTAutomation.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\MTAutomation\obj\Debug\MTAutomation.pdb

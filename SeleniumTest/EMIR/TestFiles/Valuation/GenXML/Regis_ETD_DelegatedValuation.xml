@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EMIRValuation xmlns="http://www.impendiumsystems.com/2012/emirvaluation">
+  <ValuationEntry>
+    <DelegatedValuationData>
+	    <SourceTradeID>Regis_del_positionPFC_STI_888</SourceTradeID>
+	    <UniqueTradeID>Regis_del_positionPFC_UTI_888</UniqueTradeID>
+      <ValuationDate>2014-07-30</ValuationDate>
+	    <ValuationValue>111.00</ValuationValue>
+      <ValuationCurrency>GBP</ValuationCurrency>
+	    <ValuationType>Mark to Market</ValuationType>
+      <ValuationCounterparty></ValuationCounterparty>
+    </DelegatedValuationData>
+  </ValuationEntry>
+</EMIRValuation>

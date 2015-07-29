@@ -1,0 +1,33 @@
+﻿using AutomationUtilities.PageObjects;
+using AutomationUtilities.Utils;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace EmirAutomation.Tests.SystemTab
+{
+    [TestClass]
+    public class TTenants_Detail : Test
+    {
+        bool storeResults = false;
+
+        [TestInitialize]
+        public void SetUp()
+        {
+            Test.SetTestName(TestContext);
+            Test.LoginAsSystemUser();
+        }
+
+        [TestCategory("System"), TestCategory("Maintenance"), TestCategory("RegressionTesting"), TestMethod()]
+        public void Tenant_ViewTenant()
+        {
+            storeResults = true;
+            PO_TenantsPopUp referenceDatas = PO_Dashboard.GoToTenantsPopUp();
+            referenceDatas.ViewTenantDetails();
+            Test.result = "Passed";
+        }
+        [TestCleanup]
+        public void TearDown()
+        {
+            Test.TearDown(storeResults);
+        }
+    }
+}

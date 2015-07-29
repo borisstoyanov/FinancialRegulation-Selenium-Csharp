@@ -1,0 +1,16 @@
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\bin\Debug\AutomationUtilities.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\bin\Debug\AutomationUtilities.pdb
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\bin\Debug\SampleFileGenerator.AutoGenerate.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\bin\Debug\SampleFileGenerator.Library.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\bin\Debug\SampleFileGenerator.Model.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\bin\Debug\Selenium.WebDriverBackedSelenium.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\bin\Debug\ThoughtWorks.Selenium.Core.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\bin\Debug\WebDriver.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\bin\Debug\WebDriver.Support.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\bin\Debug\Selenium.WebDriverBackedSelenium.xml
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\bin\Debug\ThoughtWorks.Selenium.Core.xml
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\bin\Debug\WebDriver.xml
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\bin\Debug\WebDriver.Support.xml
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\obj\Debug\AutomationUtilities.csprojResolveAssemblyReference.cache
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\obj\Debug\AutomationUtilities.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\AutomationUtilities\obj\Debug\AutomationUtilities.pdb

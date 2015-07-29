@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmirAutomation", "EMIR\EmirAutomation.csproj", "{E7E2C033-3D36-4BB4-B315-46A16C2C9C67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemitAutomation", "RemitAutomation\RemitAutomation.csproj", "{15938CAB-82D4-4048-8CF3-A09D6B789251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationUtilities", "AutomationUtilities\AutomationUtilities.csproj", "{AAFC64C1-2855-4171-BB46-10AFDEBC17F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTAutomation", "MTAutomation\MTAutomation.csproj", "{FD843E12-1ED5-41F7-8FB6-199FCAB7C3B1}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://imp-tfs.impendiumsystems.com/tfs/impendium
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = EMIR\\EmirAutomation.csproj
+		SccProjectName1 = EMIR
+		SccLocalPath1 = EMIR
+		SccProjectUniqueName2 = RemitAutomation\\RemitAutomation.csproj
+		SccProjectName2 = RemitAutomation
+		SccLocalPath2 = RemitAutomation
+		SccProjectUniqueName3 = AutomationUtilities\\AutomationUtilities.csproj
+		SccProjectName3 = AutomationUtilities
+		SccLocalPath3 = AutomationUtilities
+		SccProjectUniqueName4 = MTAutomation\\MTAutomation.csproj
+		SccProjectName4 = MTAutomation
+		SccLocalPath4 = MTAutomation
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7E2C033-3D36-4BB4-B315-46A16C2C9C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7E2C033-3D36-4BB4-B315-46A16C2C9C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7E2C033-3D36-4BB4-B315-46A16C2C9C67}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E7E2C033-3D36-4BB4-B315-46A16C2C9C67}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E7E2C033-3D36-4BB4-B315-46A16C2C9C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7E2C033-3D36-4BB4-B315-46A16C2C9C67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7E2C033-3D36-4BB4-B315-46A16C2C9C67}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E7E2C033-3D36-4BB4-B315-46A16C2C9C67}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{15938CAB-82D4-4048-8CF3-A09D6B789251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15938CAB-82D4-4048-8CF3-A09D6B789251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15938CAB-82D4-4048-8CF3-A09D6B789251}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{15938CAB-82D4-4048-8CF3-A09D6B789251}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{15938CAB-82D4-4048-8CF3-A09D6B789251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15938CAB-82D4-4048-8CF3-A09D6B789251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15938CAB-82D4-4048-8CF3-A09D6B789251}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{15938CAB-82D4-4048-8CF3-A09D6B789251}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AAFC64C1-2855-4171-BB46-10AFDEBC17F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAFC64C1-2855-4171-BB46-10AFDEBC17F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAFC64C1-2855-4171-BB46-10AFDEBC17F6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AAFC64C1-2855-4171-BB46-10AFDEBC17F6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AAFC64C1-2855-4171-BB46-10AFDEBC17F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAFC64C1-2855-4171-BB46-10AFDEBC17F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAFC64C1-2855-4171-BB46-10AFDEBC17F6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AAFC64C1-2855-4171-BB46-10AFDEBC17F6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FD843E12-1ED5-41F7-8FB6-199FCAB7C3B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD843E12-1ED5-41F7-8FB6-199FCAB7C3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD843E12-1ED5-41F7-8FB6-199FCAB7C3B1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FD843E12-1ED5-41F7-8FB6-199FCAB7C3B1}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FD843E12-1ED5-41F7-8FB6-199FCAB7C3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD843E12-1ED5-41F7-8FB6-199FCAB7C3B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD843E12-1ED5-41F7-8FB6-199FCAB7C3B1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FD843E12-1ED5-41F7-8FB6-199FCAB7C3B1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

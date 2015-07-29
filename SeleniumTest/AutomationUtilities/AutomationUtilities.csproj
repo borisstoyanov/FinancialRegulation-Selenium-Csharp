@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAFC64C1-2855-4171-BB46-10AFDEBC17F6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AutomationUtilities</RootNamespace>
+    <AssemblyName>AutomationUtilities</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="SampleFileGenerator.AutoGenerate">
+      <HintPath>..\3rdPartyLibs\SampleFileGenerator\SampleFileGenerator.AutoGenerate.dll</HintPath>
+    </Reference>
+    <Reference Include="SampleFileGenerator.Library">
+      <HintPath>..\3rdPartyLibs\SampleFileGenerator\SampleFileGenerator.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="SampleFileGenerator.Model">
+      <HintPath>..\3rdPartyLibs\SampleFileGenerator\SampleFileGenerator.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Selenium.WebDriverBackedSelenium, Version=2.45.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Selenium.WebDriverBackedSelenium.2.45.0\lib\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.Selenium.Core, Version=2.45.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Selenium.RC.2.45.0\lib\net40\ThoughtWorks.Selenium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=2.45.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Selenium.WebDriver.2.45.0\lib\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.45.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Selenium.Support.2.45.0\lib\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Browser\Browser.cs" />
+    <Compile Include="Commands\ImportCollateralTREMIR.cs" />
+    <Compile Include="Commands\ImportCollateralXML.cs" />
+    <Compile Include="Commands\ImportGeneralXML.cs" />
+    <Compile Include="Commands\ImportProduct_CSVMapper.cs" />
+    <Compile Include="Commands\ImportProduct_GeneralXML.cs" />
+    <Compile Include="Commands\ImportTREMIRFile.cs" />
+    <Compile Include="Commands\ImportValuationTREMIR_R002.cs" />
+    <Compile Include="Commands\ImportValuationXML.cs" />
+    <Compile Include="FieldIDs\ActionTypeFieldIDs.cs" />
+    <Compile Include="FieldIDs\AddressesFieldIDs.cs" />
+    <Compile Include="FieldIDs\BicFieldIDs.cs" />
+    <Compile Include="FieldIDs\ChannelFileMasksFieldIDs.cs" />
+    <Compile Include="FieldIDs\CommodityDetailFieldIDs.cs" />
+    <Compile Include="FieldIDs\CurrencyInputFields.cs" />
+    <Compile Include="FieldIDs\EicFieldIDs.cs" />
+    <Compile Include="FieldIDs\EMIRSettingsFieldIDs.cs" />
+    <Compile Include="FieldIDs\ExtRefIns.cs" />
+    <Compile Include="FieldIDs\ExtRefOut.cs" />
+    <Compile Include="FieldIDs\FTPChannelSettingsFieldIDs.cs" />
+    <Compile Include="FieldIDs\LegalEntityFields.cs" />
+    <Compile Include="FieldIDs\MarketFields.cs" />
+    <Compile Include="FieldIDs\MessageTypesFieldIDs.cs" />
+    <Compile Include="FieldIDs\ReferenceDataFieldIDs.cs" />
+    <Compile Include="FieldIDs\RegulationsFieldIDs.cs" />
+    <Compile Include="FieldIDs\ResponseSettingsFieldIDs.cs" />
+    <Compile Include="FieldIDs\SourceSettingsFieldIDs.cs" />
+    <Compile Include="FieldIDs\SourceSystemFieldIDs.cs" />
+    <Compile Include="FieldIDs\TargetSettings_SendByTradeRepo.cs" />
+    <Compile Include="FieldIDs\TargetSettings_SendTrades.cs" />
+    <Compile Include="FieldIDs\TargetSettingsFieldIDs.cs" />
+    <Compile Include="FieldIDs\TargetSettings_SendCollateral.cs" />
+    <Compile Include="FieldIDs\TargetSettings_SendValuation.cs" />
+    <Compile Include="FieldIDs\TenantFieldIDs.cs" />
+    <Compile Include="FieldIDs\TradeRepositoriesFieldIDs.cs" />
+    <Compile Include="FieldIDs\TradeRepositoryAccountsFieldIDs.cs" />
+    <Compile Include="FieldIDs\TransactionTypesFieldIDs.cs" />
+    <Compile Include="FieldIDs\WorkQueueCategoriesFieldIDs.cs" />
+    <Compile Include="PageObjects\ActionsButton\Audit\PO_AuditApprovals.cs" />
+    <Compile Include="PageObjects\ActionsButton\Audit\PO_AuditCollaterals.cs" />
+    <Compile Include="PageObjects\ActionsButton\Audit\PO_AuditInbound.cs" />
+    <Compile Include="PageObjects\ActionsButton\Audit\PO_AuditOutbound.cs" />
+    <Compile Include="PageObjects\ActionsButton\Audit\PO_AuditTrade.cs" />
+    <Compile Include="PageObjects\ActionsButton\Audit\PO_AuditValuation.cs" />
+    <Compile Include="PageObjects\ActionsButton\Import\PO_ImportManualOrdersSource.cs" />
+    <Compile Include="PageObjects\ActionsButton\Manage\PO_ExtRefIns_Promote.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\CounterParties\PO_CounterParty_ViewCP.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\EicCodes\PO_EICPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\EicCodes\PO_EIC_CreateEIC.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\EicCodes\PO_EIC_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\EicCodes\PO_EIC_EditEIC.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\ProdContractSer\PO_ProductContractSeriesPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\ProdContractSer\PO_ProductContractSeries_Create.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\ProdContractSer\PO_ProductContractSeries_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\ProdContractSer\PO_ProductContractSeries_View.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\InitiatorAggressor\PO_InitiatorAggressorPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\InitiatorAggressor\PO_InitiatorAggressor_Create.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\InitiatorAggressor\PO_InitiatorAggressor_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\ISINCodes\PO_ISINCodes_Create.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\ISINCodes\PO_ISINCodes_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\ISINCodes\PO_ISINCodes_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\ISINCodes\PO_ISINCodes_PopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\ActionTypes\PO_ActionTypesPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\ActionTypes\PO_ActionTypes_CreateActionTypePopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\ActionTypes\PO_ActionTypes_Detail.cs" />
+    <Compile Include="PageObjects\Maintanance\System\ActionTypes\PO_ActionTypes_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Addresses\PO_AddessesPopUp.cs" />
+    <Compile Include="PageObjects\ActionsButton\Audit\PO_AuditResponses.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Addresses\PO_Addesses_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Addresses\PO_Addesses_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Addresses\PO_Addresses_CreateAddressPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\BicCodes\PO_BICPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\BicCodes\PO_BIC_CreateBIC.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\BicCodes\PO_BIC_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\BicCodes\PO_BIC_EditBIC.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\ChannelFileMasks\PO_ChannelFileMasksPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\ChannelFileMasks\PO_ChannelFileMasks_CreateChannelFileMasksPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\ChannelFileMasks\PO_ChannelFileMasks_Detail.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\ChannelFileMasks\PO_ChannelFileMasks_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\CounterParties\PO_CounterParty_ViewMarkets.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\Currency\PO_CurrencyPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\Currency\PO_Currency_Create.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\Currency\PO_Currency_Detail.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\Currency\PO_Currency_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\System\EntityLocks\PO_EntityLocksPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\ExtRefInOut\PO_ExtRefIn_ViewDetails.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\ExtRefInOut\PO_ExtRefOut_EditRefOut.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\ExtRefInOut\PO_ExtRefOut_ViewDetails.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\ExtRefInOut\PO_ExtRefIn_EditRefIn.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\ExtRefInOut\PO_ManageExtRefIn.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\FTPChannelSettings\PO_FTPChannelSettingsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\FTPChannelSettings\PO_FTPChannelSettings_CreateFTPChannelSettingsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\FTPChannelSettings\PO_FTPChannelSettings_Detail.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\FTPChannelSettings\PO_FTPChannelSettings_Edit.cs" />
+    <Compile Include="PageObjects\ActionsButton\Import\PO_ImportProductManualSource.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\LegalEntities\PO_LegalEntity_Create.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\LegalEntities\PO_LegalEntities.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\LegalEntities\PO_LegalEntity_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\LegalEntities\PO_LegalEntity_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Markets\PO_MarketsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Markets\PO_Markets_Create.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Markets\PO_Markets_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Markets\PO_Markets_ViewAudits.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Markets\PO_Markets_ViewCounterparty.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Markets\PO_Markets_ViewDetails.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\MessageTypes\PO_MessageTypesPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\MessageTypes\PO_MessageTypes_CreateMessageTypesPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\MessageTypes\PO_MessageTypes_Detail.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\MessageTypes\PO_MessageTypes_Edit.cs" />
+    <Compile Include="PageObjects\Dashboard\PO_DashboardConfiguredQueues.cs" />
+    <Compile Include="PageObjects\Dashboard\PO_DashboardConfiguredQueuesTabs.cs" />
+    <Compile Include="PageObjects\Dashboard\PO_DashboardInProgressQueues.cs" />
+    <Compile Include="PageObjects\Dashboard\PO_DashboardInvalidQueues.cs" />
+    <Compile Include="PageObjects\Dashboard\PO_DashboardStatuses.cs" />
+    <Compile Include="PageObjects\Dashboard\PO_DashboardValidQueues.cs" />
+    <Compile Include="PageObjects\Dashboard\PO_SearchResult.cs" />
+    <Compile Include="PageObjects\Dashboard\PO_UTISearch.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Operations\PO_OperationsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Operations\PO_Operations_EditRoles.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Operations\PO_Operations_ViewRoles.cs" />
+    <Compile Include="PageObjects\EMIRTransactionPage\PO_EditEmirCollateralPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PageObjects\Maintanance\System\EMIRSettings\PO_EMIRSettings.cs" />
+    <Compile Include="PageObjects\Misc\PO_StaticMappingsAwaitingApproval.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Products\PO_Products_ViewProduct.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\CommodityDetail\PO_CommodityDetail_CreateCD.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\PO_ReferenceDatasPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\PO_ReferenceDatas_CreateReferenceDataPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\PO_ReferenceDatas_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\PO_ReferenceDatas_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\Regulations\PO_RegulationsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\Regulations\PO_Regulations_CreateRegulationsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\Regulations\PO_Regulations_Detail.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\Regulations\PO_Regulations_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\ResponseSettings\PO_ResponseSettingsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\ResponseSettings\PO_ResponseSettings_CreateResponseSettingsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\ResponseSettings\PO_ResponseSettings_Detail.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\ResponseSettings\PO_ResponseSettings_Edit.cs" />
+    <Compile Include="PageObjects\ActionsButton\Send\PO_SendTradesByTradeRepo.cs" />
+    <Compile Include="Exceptions\NotOnTheExpectedPageException.cs" />
+    <Compile Include="Exceptions\TextNotFoundException.cs" />
+    <Compile Include="FieldIDs\CounterPartyInputFields.cs" />
+    <Compile Include="FieldIDs\CounterPartySelectFields.cs" />
+    <Compile Include="FieldIDs\ProductInputFields.cs" />
+    <Compile Include="FieldIDs\ProductSelectFields.cs" />
+    <Compile Include="FieldIDs\TargetSettings_Import.cs" />
+    <Compile Include="PageObjects\ActionsButton\PO_ActionButton.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\CounterParties\PO_CounterParties_PopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\CounterParties\PO_CounterParty_CreateCP_PopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\CounterParties\PO_CounterParty_EditCP.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\ExtRefInOut\PO_ExtRefIn_CreateRefIn.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\ExtRefInOut\PO_ExtRefOut_CreateRefOut.cs" />
+    <Compile Include="PageObjects\Dashboard\PO_Dashboard.cs" />
+    <Compile Include="PageObjects\EMIRTransactionPage\PO_EditEmirTransactionPage.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Operations\PO_Operations_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\SourceSettings\PO_SourceSettingsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\SourceSettings\PO_SourceSettings_CreateSourceSettingsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\SourceSettings\PO_SourceSettings_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\SourceSettings\PO_SourceSettings_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\System\SourceSystems\PO_SourceSystemsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\SourceSystems\PO_SourceSystems_CreateSourceSystemPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\SourceSystems\PO_SourceSystems_Detail.cs" />
+    <Compile Include="PageObjects\Maintanance\System\SourceSystems\PO_SourceSystems_Edit.cs" />
+    <Compile Include="PageObjects\ActionsButton\Sources\PO_InboundSourcesPopUp.cs" />
+    <Compile Include="PageObjects\ActionsButton\Sources\PO_OutboundSourcesPopUp.cs" />
+    <Compile Include="PageObjects\ActionsButton\Sources\PO_ResponseSourcesPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\CommodityDetail\PO_CommodityDetail_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\CommodityDetail\PO_CommodityDetail_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\ReferenceData\CommodityDetail\PO_CommodityDetail_PopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TargetSettings\PO_TargetSettingsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TargetSettings\PO_TargetSettings_CreateTargetSettingsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TargetSettings\PO_TargetSettings_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TargetSettings\PO_TargetSettings_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Tenants\PO_TenantsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Tenants\PO_Tenants_CreateTenantPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Tenants\PO_Tenants_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Tenants\PO_Tenants_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Tenants\PO_Tenants_EditUsers.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Tenants\PO_Tenants_ViewUsers.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TradeRepositories\PO_TradeRepositoriesPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TradeRepositories\PO_TradeRepositories_CreateTradeRepositoriesPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TradeRepositories\PO_TradeRepositories_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TradeRepositories\PO_TradeRepositories_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TradeRepositoryAccounts\PO_TradeRepositoryAccountsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TradeRepositoryAccounts\PO_TradeRepositoryAccounts_CreateTradeRepositoryAccountsPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TradeRepositoryAccounts\PO_TradeRepositoryAccounts_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TradeRepositoryAccounts\PO_TradeRepositoryAccounts_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TransactionTypes\PO_TransactionTypesPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TransactionTypes\PO_TransactionTypes_CreateTransactionTypesPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TransactionTypes\PO_TransactionTypes_Details.cs" />
+    <Compile Include="PageObjects\Maintanance\System\Channels\TransactionTypes\PO_TransactionTypes_Edit.cs" />
+    <Compile Include="PageObjects\Maintanance\System\WorkQueueCategories\PO_WorkQueueCategoriesPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\WorkQueueCategories\PO_WorkQueueCategories_CreateWorkQueueCategoriesPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\System\WorkQueueCategories\PO_WorkQueueCategories_Detail.cs" />
+    <Compile Include="PageObjects\Maintanance\System\WorkQueueCategories\PO_WorkQueueCategories_Edit.cs" />
+    <Compile Include="PageObjects\WorkQueues\PO_EMIRQueue.cs" />
+    <Compile Include="PageObjects\Dashboard\PO_HelpAbout.cs" />
+    <Compile Include="PageObjects\ActionsButton\Import\PO_ImportManualCollateralSource.cs" />
+    <Compile Include="PageObjects\ActionsButton\Import\PO_ImportManualTradeSource.cs" />
+    <Compile Include="PageObjects\ActionsButton\Import\PO_ImportManualValuationSource.cs" />
+    <Compile Include="PageObjects\Misc\PO_LoginPage.cs" />
+    <Compile Include="PageObjects\Maintanance\PO_MaintenenceButton.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\ExtRefInOut\PO_ExtRefIn_PopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\ExtRefInOut\PO_ExtRefOut_PopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Products\PO_Products_CreateProductPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Products\PO_Products_EditProductPopUp.cs" />
+    <Compile Include="PageObjects\Maintanance\BusinessData\Products\PO_ProductsPopUp.cs" />
+    <Compile Include="PageObjects\ActionsButton\Send\PO_SendCollateralsByTargetSetting.cs" />
+    <Compile Include="PageObjects\ActionsButton\Send\PO_SendTradesByTargetSetting.cs" />
+    <Compile Include="PageObjects\ActionsButton\Send\PO_SendValuations.cs" />
+    <Compile Include="PageObjects\Misc\PO_StaticEntitiesAwaitingApproval.cs" />
+    <Compile Include="PageObjects\ActionsButton\Manage\PO_RegenerateWorkQueuesPopUp.cs" />
+    <Compile Include="PageObjects\Dashboard\PO_UserAccountButton.cs" />
+    <Compile Include="PageObjects\ActionsButton\Manage\PO_ManageWorkQueues.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Setings.cs" />
+    <Compile Include="Utils\ServerConfigurationSection.cs" />
+    <Compile Include="Utils\SQLServerUtilities.cs" />
+    <Compile Include="Utils\Test.cs" />
+    <Compile Include="Utils\TestResults.cs" />
+    <Compile Include="Utils\TREMIRCSV.cs" />
+    <Compile Include="Utils\Util.cs" />
+    <Compile Include="Utils\XMLEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PageObjects\NavigationPO\" />
+    <Folder Include="PageObjects\ReferenceData\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

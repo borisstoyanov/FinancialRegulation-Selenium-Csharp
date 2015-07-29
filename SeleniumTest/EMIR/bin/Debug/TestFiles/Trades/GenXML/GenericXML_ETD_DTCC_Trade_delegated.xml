@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EMIRReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.impendiumsystems.com/2012/emirreporting C:/Projects/ImpendiumTFS/Elements/EMIR/Client/EMIRGE~1/ITERAT~3/EMIRReporting.xsd" xmlns="http://www.impendiumsystems.com/2012/emirreporting">
+	<EMIREntry>
+		<CommonData>
+			<SourceTradeID>testing_etdDTCC_delegated_trade_002</SourceTradeID>
+			<ActionType>N</ActionType>
+			<TransactionType>T</TransactionType>
+			<ETDIndicator>E</ETDIndicator>
+			<TransactionReferenceNumber>testing_etdDTCC_delegated_trade_002</TransactionReferenceNumber>
+			<UniqueTradeID>testing_etdDTCC_delegated_trade_002</UniqueTradeID>
+		</CommonData>
+		<Counterparty>
+			<Counterparty1ID>KU2715</Counterparty1ID>
+			<Counterparty2ID>KU2788</Counterparty2ID>
+			<BrokerID>KU2788</BrokerID>
+			<ReportingEntityID>571474TGEMMWANRLN572</ReportingEntityID>
+			<BeneficiaryID>010TestCounterpartyClient2</BeneficiaryID>
+			<TradingCapacity>P</TradingCapacity>
+			<CounterpartySide>B</CounterpartySide>
+		</Counterparty>
+		<DelegatedCounterparty>
+			<Counterparty1ID>KU2788</Counterparty1ID>
+			<Counterparty2ID>KU2715</Counterparty2ID>
+			<TradingCapacity>P</TradingCapacity>
+			<CounterpartySide>S</CounterpartySide>
+		</DelegatedCounterparty>
+		<ContractType>
+			<ProductID>FX Forward EUR/JPY</ProductID>
+		</ContractType>
+		<TransactionDetails>
+			<Venue>XXXX</Venue>
+			<PriceRateSpread>20</PriceRateSpread>
+			<PriceNotation>EUR</PriceNotation>
+			<Notional>123500.19</Notional>
+			<NotionalCurrency1>EUR</NotionalCurrency1>
+			<NotionalCurrency2>JPY</NotionalCurrency2>
+			<DeliverableCurrency1>JPY</DeliverableCurrency1>
+			<PriceMult>25</PriceMult>
+			<Quantity>1</Quantity>
+			<DeliveryType>P</DeliveryType>
+			<ExecutionTS>2014-07-23T14:00:00</ExecutionTS>
+			<EffectiveDate>2014-07-18</EffectiveDate>
+			<MaturityDate>2015-07-14</MaturityDate>
+			<SettlementDate>2015-02-14</SettlementDate>
+			<MasterAgreementType>MASTER AGREEMENT ISDA </MasterAgreementType>
+			<Compression>N</Compression>
+		</TransactionDetails>
+		<RiskMitigation>
+			<ConfirmationMeans>E</ConfirmationMeans>
+			<ConfirmationTS>2014-07-23T14:00:00</ConfirmationTS>
+		</RiskMitigation>
+		<Clearing>
+			<ClearingObligation>N</ClearingObligation>
+			<Cleared>N</Cleared>
+		</Clearing>
+		<Commodities />
+		<Currencies>
+			<ForwardExchangeRate>141.1235</ForwardExchangeRate>
+		</Currencies>
+		<Options>
+			<OptionExerciseStyle>E</OptionExerciseStyle>
+			<StrikePrice>15</StrikePrice>
+		</Options>
+		<InterestRates />
+		<DelegatedCollateral> 
+		   <PortfolioCode>Yes</PortfolioCode>
+		   <PortfolioCodeValue>125858521</PortfolioCodeValue>
+		   <Collateralisation>OC</Collateralisation>
+		</DelegatedCollateral>
+	</EMIREntry>
+</EMIRReport>

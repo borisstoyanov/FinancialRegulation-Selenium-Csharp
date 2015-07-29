@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EMIRProduct xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.impendiumsystems.com/2012/emirproduct C:/BundlerTfs/Elements/EMIR/Client/EMIRGE~1/EMIRProduct.xsd" xmlns="http://www.impendiumsystems.com/2012/emirproduct">
+	<Product>
+		<Name>BorisProductName1</Name>
+		<UPI>1234567890</UPI>
+		<ISIN>3213213121</ISIN>
+		<CFI>Cash</CFI>
+		<DeliveryType>XXXX</DeliveryType>
+		<VenueOfExecution>Index</VenueOfExecution>
+		<PriceMultiplier>1</PriceMultiplier>
+		<MaturityDate>2019-01-29</MaturityDate>
+		<Underlying>
+			<Country>1</Country>
+			<Number>AUSTRIA</Number>
+		</Underlying>
+		<Derivative>
+			<Class>Commodity</Class>
+			<Type>Futures</Type>
+		</Derivative>
+		<Commodity>
+			<Detail>Electricity</Detail>
+			<LoadType>Baseload</LoadType>
+		</Commodity>
+		<Option>
+			<Type>C</Type>
+			<ExerciseStyle>E</ExerciseStyle>
+			<StrikePrice>2</StrikePrice>
+		</Option>
+	</Product>
+</EMIRProduct>

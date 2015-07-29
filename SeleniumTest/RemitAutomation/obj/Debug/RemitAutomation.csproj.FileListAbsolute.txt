@@ -1,0 +1,17 @@
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\obj\Debug\RemitAutomation.csprojResolveAssemblyReference.cache
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\TestFiles\Orders\GenXML\GenericXML_Order_.xml
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\TestFiles\Trades\GenXML\GenericXML_Trade_.xml
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\TestFiles\Products\GenXML\GenericXMLimportProduct.xml
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\TestFiles\Products\CSVImporter\ProductUploadCSVTemplates.csv
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\RemitAutomation.dll.config
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\RemitAutomation.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\RemitAutomation.pdb
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\AutomationUtilities.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\WebDriver.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\WebDriver.Support.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\AutomationUtilities.pdb
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\WebDriver.xml
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\WebDriver.Support.xml
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\obj\Debug\RemitAutomation.dll
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\obj\Debug\RemitAutomation.pdb
+C:\ImpendiumTFS\TestAutomation\SeleniumTest\RemitAutomation\bin\Debug\TestFiles\ChainedImportFile\GenericXML_Chained_.xml

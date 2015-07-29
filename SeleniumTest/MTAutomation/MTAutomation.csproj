@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD843E12-1ED5-41F7-8FB6-199FCAB7C3B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MTAutomation</RootNamespace>
+    <AssemblyName>MTAutomation</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_GenericXML_ByPortfolioCode.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_GenericXML_ByUTI.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_GenXML_Delegated_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_GenXML_Delegated_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_TREMIR.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_TREMIR_R003_NonDel_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportColl_TREMIR_R003_NonDel_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportVal_GenericXML.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportVal_GenXML_Delegated_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportVal_GenXML_Delegated_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportVal_TREMIR_R002.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportVal_TREMIR_R002_NonDel_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportColAndVal\TImportVal_TREMIR_R002_NonDel_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportPosition_TREMIR_R001_DelegatedAndNonDelegated_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportPosition_TREMIR_R001_DelegatedAndNonDelegated_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_GenricXML.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_GenXML_withStaticError_andFix.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TREMIR.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TREMIR_R010_Delegated_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TREMIR_R010_Delegated_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TREMIR_R010_NonDelegated_REGIS.cs" />
+    <Compile Include="Tests\ActionsUserInterface\ImportTrades\TImportTrade_TREMIR_R010_NonDelelgated_DTCC.cs" />
+    <Compile Include="Tests\ActionsUserInterface\SendColAndVal\TSendColateralToDTCC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\ActionsUserInterface\SendColAndVal\TSendCollateralToREGIS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\ActionsUserInterface\SendColAndVal\TSendValuation_DTCC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\ActionsUserInterface\SendColAndVal\TSendValuation_REGIS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendCompressionTrade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendPositionsToDTCC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendPositionToREGIS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendTradesByTradeRepoAccount_DTCC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendTradesByTradeRepoAccount_REGIS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendTradesToDTCC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\ActionsUserInterface\SendTrades\TSendTradeToREGIS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tests\ActionsUserInterface\Sources\TInbound.cs" />
+    <Compile Include="Tests\ActionsUserInterface\Sources\TOutbound.cs" />
+    <Compile Include="Tests\ActionsUserInterface\Sources\TResponse.cs" />
+    <Compile Include="Tests\Audit\TMTApprovalsAudit_SearchTests.cs" />
+    <Compile Include="Tests\Audit\TMTCollateralAudit_SearchTests.cs" />
+    <Compile Include="Tests\Audit\TMTInboundAudit_SearchTests.cs" />
+    <Compile Include="Tests\Audit\TMTOutboundAudit_SearchTests.cs" />
+    <Compile Include="Tests\Audit\TMTResponseAudit_SearchTests.cs" />
+    <Compile Include="Tests\Audit\TMTTradeAudit_SearchTests.cs" />
+    <Compile Include="Tests\Audit\TMTValuationAudit_SearchTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TAddress_SearchAddressTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TBic_SearchBICCodeTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TCounterParties_SearchTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TExtRefIn_SearchTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TExtRefOuts_SearchTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TLegalEnt_SearchTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TMarkets_SearchTests.cs" />
+    <Compile Include="Tests\BusinessDataTab\TProducts_SearchTests.cs" />
+    <Compile Include="Tests\Channels\TChannelFileMasks_Search.cs" />
+    <Compile Include="Tests\Channels\TFTPChannelSettings_Search.cs" />
+    <Compile Include="Tests\Channels\TMessageTypes_Search.cs" />
+    <Compile Include="Tests\Channels\TRegulations_Search.cs" />
+    <Compile Include="Tests\Channels\TResponseSettings_Search.cs" />
+    <Compile Include="Tests\Channels\TSourceSettings_Search.cs" />
+    <Compile Include="Tests\Channels\TTargetSettings_Search.cs" />
+    <Compile Include="Tests\Channels\TTradeRepositories_Search.cs" />
+    <Compile Include="Tests\Channels\TTradeRepositoryAccounts_Search.cs" />
+    <Compile Include="Tests\Channels\TTransactionType_Search.cs" />
+    <Compile Include="Tests\Dashboard\TDashboard_CheckApplicationHistory.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TActionTypes_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCleared_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TClearingObligation_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TClearingThreshold_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCollateralisation_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCollateralPortfolio_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommercialActivities_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommodityBase_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCommodityDetail_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCompressions_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TConfirmationMean_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCorporateSector_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCounterpartySide_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCountries_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TCurrencies_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TDeliveryTypes_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TDerivativeClasses_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TETDIndicators_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TExerciseStyles_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TFinancialNatures_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TFrequency_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TIntragroups_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TISINCodes_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TLifecycleEvents_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TLoadType_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TMasterAgreements_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TNonEEAs_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TOptionType_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TProductTaxonomy_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TRateDayCount_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TTradingCapacities_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TUnderlyingType_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TValuationSources_Search.cs" />
+    <Compile Include="Tests\ReferenceDataTab\TValuationTypes_Search.cs" />
+    <Compile Include="Tests\Responses\TDTCC_Responses.cs" />
+    <Compile Include="Tests\Responses\TREGIS_Responses.cs" />
+    <Compile Include="Tests\System\TActionTypes_Search.cs" />
+    <Compile Include="Tests\System\TEntityLocks_SearchEntityType.cs" />
+    <Compile Include="Tests\System\TOperations_Create.cs" />
+    <Compile Include="Tests\System\TSourceSystems_Search.cs" />
+    <Compile Include="Tests\System\TTenants_Search.cs" />
+    <Compile Include="Tests\System\TWorkQueueCategories_Search.cs" />
+    <Compile Include="Tests\TCollateralNotVisisible.cs" />
+    <Compile Include="Tests\TREMITUserNotAbleToSeeColAndValQueues.cs" />
+    <Compile Include="Tests\TTradesNotVisibleForDifferentRegulations.cs" />
+    <Compile Include="Tests\TTradesNotVisibleForDifferentTenants.cs" />
+    <Compile Include="Tests\TTreadeNotVisibleInWorkQueue.cs" />
+    <Compile Include="Tests\WorkQs\TCreateWorkQ.cs" />
+    <Compile Include="Utils\CreateImportFile.cs" />
+    <Compile Include="Utils\EmirUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\ImportCollateral.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\ImportPosition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\ImportTrade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\ImportValuation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\MTUtils.cs" />
+    <Compile Include="Utils\Send.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Suites\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutomationUtilities\AutomationUtilities.csproj">
+      <Project>{aafc64c1-2855-4171-bb46-10afdebc17f6}</Project>
+      <Name>AutomationUtilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

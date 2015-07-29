@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EMIRValuation xmlns="http://www.impendiumsystems.com/2012/emirvaluation">
+  <ValuationEntry>
+    <ValuationData>
+      <SourceTradeID>B1213STI09</SourceTradeID>
+      <UniqueTradeID>B1213UTI09</UniqueTradeID>
+      <ValuationDate>2014-09-12</ValuationDate>
+      <ValuationValue>500.00</ValuationValue>
+      <ValuationCurrency>GBP</ValuationCurrency>
+	    <ValuationType>123123</ValuationType>
+      <ValuationCounterparty></ValuationCounterparty>
+    </ValuationData>
+  </ValuationEntry>
+</EMIRValuation>

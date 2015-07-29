@@ -1,0 +1,2 @@
+ProductCode,Name,DerivativeClass,DerivativeType,UPI,ISIN,AII,CFI,Deliverytype,VenueOfExecution,UnderlyingType,Underlying,CountryoftheUnderlying,PriceMultiplier,PriceNotation,CommodityBase,CommodityDetails,CommodityLoadtype,MaturityDate,StrikePrice,OptionStyle,OptionType
+Borisauto,BorisProductName,Commodity,Futures,1234567890,321321312,,Cash,XXXX,Index,,AUSTRIA,1,1,,,,Electricity,Baseload,2019-01-29,2,E,C
